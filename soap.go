@@ -35,6 +35,7 @@ type BasicAuth struct {
 type SoapClient struct {
 	UseTLS bool
 	Auth   *BasicAuth
+	BaseURL string
 }
 
 func (sc *SoapClient) SendServiceRequest(service Service) (string, error) {
